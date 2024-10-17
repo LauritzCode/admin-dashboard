@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar-wrap">
+            <div class="sidebar">
+                <div class="dashboard"><span><box-icon name='dashboard' type='solid' ></box-icon>Dashboard</span></div>
+
+                <span><box-icon type='solid' name='home'></box-icon><a href="#" class="item">Home</a></span>
+                <span><box-icon type='solid' name='user'></box-icon><a href="#" class="item">Profile</a></span>
+                <span><box-icon type='solid' name='message-dots'></box-icon><a href="#" class="item">Messages</a></span>
+                <span><box-icon name='time-five' type='solid' ></box-icon><a href="#" class="item">History</a></span>
+                <span><box-icon name='calendar-check' type='solid' ></box-icon><a href="#" class="item">Tasks</a></span>
+                <span><box-icon type='solid' name='group'></box-icon><a href="#" class="item">Communities</a></span>
+                <span><box-icon type='solid' name='cog'></box-icon><a href="#" class="item">Settings</a></span>
+                <span><box-icon type='solid' name='comment-error'></box-icon><a href="#" class="item">Support</a></span>
+                <span><box-icon type='solid' name='flag'></box-icon><a href="#" class="item">Privacy</a></span>
+            </div>
+        </div>
+        <div class="header">
+            <div class="search-bar-user">
+                    <div class="input-search">
+                        <box-icon name='search'></box-icon>
+                        <input type="text">
+                    </div>
+                    <div class="top-search-right">
+                        <box-icon name='bell' ></box-icon>
+                        <img src="Profile-pic.webp" alt="profile-pic">
+                    <span>Lauritz Code</span>
+                </div>
+            </div>
+            <div class="actions-user">
+                <div class="action-left">
+                    <img src="Profile-pic.webp" alt="profile-pic">
+                    <span>Hi there,</span><p>Lauritz Code!</p>
+                </div>
+                    <div class="action-buttons">
+                <button>New</button>
+                <button>Upload</button>
+                <button>Share</button>
+                </div>
+            </div>
+        </div>
+        <div class="main">
+            <div class="projects-section">
+                <span class="project-title">Your Projects</span>
+                <div class="projects">
+                    <div class="card">
+                        <span>API Integration Tool</span>
+                        <p>This project involves building a seamless API integration tool that automates the connection between different services. It supports both REST and GraphQL APIs, providing developers with real-time data syncing, error handling, and performance monitoring features.</p>
+                        <div class="actions">
+                            <box-icon name='share-alt' ></box-icon>
+                            <box-icon name='bookmarks' type='solid' ></box-icon>
+                            <box-icon name='low-vision' type='solid' ></box-icon>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <span>Cloud Deployment Pipeline</span>
+                        <p>A fully automated CI/CD pipeline for deploying applications to cloud platforms. The project utilizes Docker, Kubernetes, and Jenkins to streamline deployment workflows, ensuring continuous integration, automated testing, and scalable infrastructure management.
+                        </p>
+                        <div class="actions">
+                            <box-icon name='share-alt' ></box-icon>
+                            <box-icon name='bookmarks' type='solid' ></box-icon>
+                            <box-icon name='low-vision' type='solid' ></box-icon>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <span>Machine Learning Model Optimizer</span>
+                        <p>A tool designed to optimize machine learning models by automating hyperparameter tuning and model evaluation. This project focuses on providing real-time analytics for model performance across datasets using TensorFlow and scikit-learn.</p>
+                        <div class="actions">
+                            <box-icon name='share-alt' ></box-icon>
+                            <box-icon name='bookmarks' type='solid' ></box-icon>
+                            <box-icon name='low-vision' type='solid' ></box-icon>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <span>Real-time Collaboration Platform</span>
+                        <p>A real-time collaboration web platform where teams can work together on projects with integrated task management, video calls, and live code editing. Built with React and WebRTC for seamless user interaction.</p>
+                        <div class="actions">
+                            <box-icon name='share-alt' ></box-icon>
+                            <box-icon name='bookmarks' type='solid' ></box-icon>
+                            <box-icon name='low-vision' type='solid' ></box-icon>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <span>Serverless Microservices Architecture</span>
+                        <p>This project implements a serverless architecture using AWS Lambda to build scalable microservices. It focuses on cost-efficiency, auto-scaling, and reduced infrastructure complexity by leveraging API Gateway and DynamoDB for backend services.</p>
+                        <div class="actions">
+                            <box-icon name='share-alt' ></box-icon>
+                            <box-icon name='bookmarks' type='solid' ></box-icon>
+                            <box-icon name='low-vision' type='solid' ></box-icon>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <span>Blockchain-based Voting System</span>
+                        <p>A secure, transparent, and decentralized voting system based on blockchain technology. This project uses Solidity smart contracts to ensure tamper-proof results and verifiable voter anonymity in decentralized elections.</p>
+                        <div class="actions">
+                            <box-icon name='share-alt' ></box-icon>
+                            <box-icon name='bookmarks' type='solid' ></box-icon>
+                            <box-icon name='low-vision' type='solid' ></box-icon>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="aside">
+                <div class="announcements-wrapper">
+                    <span class="title">Announcements</span>
+                    <div class="announcements">
+                        <div class="announcement">
+                            <strong><span>Scheduled System Maintenance</span></strong>
+                            <p>Our system will undergo scheduled maintenance on October 25th from 2:00 AM to 6:00 AM UTC. During this time, some services may experience downtime or slower response times. We appreciate your understanding.</p>
+                        </div>
+                        <div class="announcement">
+                            <strong><span>New Feature Release: Dark Mode</span></strong>
+                            <p>We're excited to announce the release of Dark Mode! Users can now switch between light and dark themes from their account settings. Try it out to reduce eye strain and customize your dashboard appearance.</p>
+                        </div>
+                        <div class="announcement">
+                            <strong><span>Security Update Notification</span></strong>
+                            <p>A critical security update will be deployed on all platforms by the end of this week. This update includes patches for several vulnerabilities. Please ensure that your systems are running the latest version of our software.</p>
+                        </div>
+                        <div class="announcement">
+                            <strong><span>API Deprecation Warning</span></strong>
+                            <p>Please note that version 1.5 of our API will be deprecated on December 1st. We encourage all developers to migrate to version 2.0, which offers enhanced performance, better documentation, and new features.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="trending-wrapper">
+                    <span class="title">Trending</span>
+                    <div class="trending">
+                        <div class="trend">
+                            <img src="Profile-pic.webp" alt="trending-user">
+                            <div class="user-info">
+                                <strong><em><span>@LauritzCode</span></em></strong>
+                                <p>Full stack developer</p>
+                            </div>
+                        </div>
+                        <div class="trend">
+                            <img src="/trending-user-1.webp" alt="trending-user">
+                            <div class="user-info">
+                                <strong><em><span>@FuriousSpanner</span></em></strong>
+                                <p>Front End engineer</p>
+                            </div>
+                        </div>
+                        <div class="trend">
+                            <img src="/trending-user-3.webp" alt="trending-user">
+                            <div class="user-info">
+                                <strong><em><span>@SQL_Injector</span></em></strong>
+                                <p>Data scientist</p>
+                            </div>
+                        </div>
+                        <div class="trend">
+                            <img src="/trending-user-2.webp" alt="trending-user">
+                            <div class="user-info">
+                                <strong><em><span>@DivCenterer</span></em></strong>
+                                <p>Senior Software Engineer</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
