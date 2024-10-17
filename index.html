@@ -9,6 +9,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.png">
 </head>
 <body>
     <div class="container">
@@ -16,34 +17,34 @@
             <div class="sidebar">
                 <div class="dashboard"><span><box-icon name='dashboard' type='solid' ></box-icon>Dashboard</span></div>
 
-                <span><box-icon type='solid' name='home'></box-icon><a href="#" class="item">Home</a></span>
-                <span><box-icon type='solid' name='user'></box-icon><a href="#" class="item">Profile</a></span>
-                <span><box-icon type='solid' name='message-dots'></box-icon><a href="#" class="item">Messages</a></span>
-                <span><box-icon name='time-five' type='solid' ></box-icon><a href="#" class="item">History</a></span>
-                <span><box-icon name='calendar-check' type='solid' ></box-icon><a href="#" class="item">Tasks</a></span>
-                <span><box-icon type='solid' name='group'></box-icon><a href="#" class="item">Communities</a></span>
-                <span><box-icon type='solid' name='cog'></box-icon><a href="#" class="item">Settings</a></span>
-                <span><box-icon type='solid' name='comment-error'></box-icon><a href="#" class="item">Support</a></span>
-                <span><box-icon type='solid' name='flag'></box-icon><a href="#" class="item">Privacy</a></span>
+                <span class="nav-item"><box-icon type='solid' name='home'></box-icon><a href="#" class="item">Home</a></span>
+                <span class="nav-item"><box-icon type='solid' name='user'></box-icon><a href="#" class="item">Profile</a></span>
+                <span class="nav-item"><box-icon type='solid' name='message-dots'></box-icon><a href="#" class="item">Messages</a></span>
+                <span class="nav-item"><box-icon name='time-five' type='solid' ></box-icon><a href="#" class="item">History</a></span>
+                <span class="nav-item"><box-icon name='calendar-check' type='solid' ></box-icon><a href="#" class="item">Tasks</a></span>
+                <span class="nav-item"><box-icon type='solid' name='group'></box-icon><a href="#" class="item">Communities</a></span>
+                <span class="nav-item"><box-icon type='solid' name='cog'></box-icon><a href="#" class="item">Settings</a></span>
+                <span class="nav-item"><box-icon type='solid' name='comment-error'></box-icon><a href="#" class="item">Support</a></span>
+                <span class="nav-item"><box-icon type='solid' name='flag'></box-icon><a href="#" class="item">Privacy</a></span>
             </div>
         </div>
         <div class="header">
             <div class="search-bar-user">
+                <div class="action-left">
+                    <img src="./assets/imgs/Profile-pic.webp" alt="profile-pic">
+                    <span>Hi there,</span><p>LauritzCode!</p>
+                </div>
                     <div class="input-search">
-                        <box-icon name='search'></box-icon>
                         <input type="text">
+                        <box-icon name='search'></box-icon>
                     </div>
                     <div class="top-search-right">
                         <box-icon name='bell' ></box-icon>
-                        <img src="Profile-pic.webp" alt="profile-pic">
+                        <img src="./assets/imgs/Profile-pic.webp" alt="profile-pic">
                     <span>Lauritz Code</span>
                 </div>
             </div>
             <div class="actions-user">
-                <div class="action-left">
-                    <img src="Profile-pic.webp" alt="profile-pic">
-                    <span>Hi there,</span><p>Lauritz Code!</p>
-                </div>
                     <div class="action-buttons">
                 <button>New</button>
                 <button>Upload</button>
@@ -138,28 +139,28 @@
                     <span class="title">Trending</span>
                     <div class="trending">
                         <div class="trend">
-                            <img src="Profile-pic.webp" alt="trending-user">
+                            <img src="./assets/imgs/Profile-pic.webp" alt="trending-user">
                             <div class="user-info">
                                 <strong><em><span>@LauritzCode</span></em></strong>
                                 <p>Full stack developer</p>
                             </div>
                         </div>
                         <div class="trend">
-                            <img src="/trending-user-1.webp" alt="trending-user">
+                            <img src="./assets/imgs/trending-user-1.webp" alt="trending-user">
                             <div class="user-info">
                                 <strong><em><span>@FuriousSpanner</span></em></strong>
                                 <p>Front End engineer</p>
                             </div>
                         </div>
                         <div class="trend">
-                            <img src="/trending-user-3.webp" alt="trending-user">
+                            <img src="./assets/imgs/trending-user-3.webp" alt="trending-user">
                             <div class="user-info">
                                 <strong><em><span>@SQL_Injector</span></em></strong>
                                 <p>Data scientist</p>
                             </div>
                         </div>
                         <div class="trend">
-                            <img src="/trending-user-2.webp" alt="trending-user">
+                            <img src="./assets/imgs/trending-user-2.webp" alt="trending-user">
                             <div class="user-info">
                                 <strong><em><span>@DivCenterer</span></em></strong>
                                 <p>Senior Software Engineer</p>
@@ -168,6 +169,9 @@
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="footer">
+            <p>Copyright &copy; LauritzCode 2024</p>
         </div>
     </div>
 

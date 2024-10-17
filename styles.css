@@ -17,7 +17,8 @@ body {
     grid-template-rows: auto 1fr;
     grid-template-areas: 
     "sidebar header" 
-    "sidebar main";
+    "sidebar main"
+    "footer footer";
     height: 100vh;
 }
 
@@ -42,9 +43,24 @@ body {
     color: white;
 }
 
+.nav-item {
+    padding: 0;
+    transition: transform .2s ease-in-out;
+}
+
+.nav-item:hover {
+    transform: scale(1.05);
+}
+
 .dashboard {
     display: flex;
-    margin-bottom: 100px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.dashboard:hover {
+    transform: scale(1.05);
 }
 
 .dashboard span {
@@ -71,7 +87,7 @@ body {
 
 
 
-.sidebar a:nth-child(6) {
+.sidebar span:nth-child(6) {
     margin-bottom: 100px;
 }
 
@@ -82,7 +98,7 @@ body {
         display: flex; /* Flexbox for the entire header */
         flex-direction: column; /* Stack items in a column */
         width: 100%; /* Ensure it takes up full available width */
-        padding: 10px; /* Add padding if needed */
+        padding-top: 10px; /* Add padding if needed */
         z-index: 1;
 }
 
@@ -116,20 +132,48 @@ body {
     margin: 0 auto;
 }
 
+.input-search box-icon {
+    transition: .25s;
+    cursor: pointer;
+}
+
+.input-search box-icon:hover {
+    transform: scale(1.1);
+}
+
+.input-search box-icon:active {
+    transform: scale(.9);
+}
+
 .top-search-right {
+    transform: translateY(-40px);
     display: flex;
     align-items: center;
     gap: 30px;
 }
 
+.top-search-right box-icon,
+.top-search-right img {
+    transition: .25s;
+    cursor: pointer;
+}
+
+.top-search-right box-icon:hover,
+.top-search-right img:hover
+ {
+    transform: scale(1.05);
+}
+
 .header button {
     background: #3b82f6;
     padding: 10px;
+    cursor: pointer;
+    transition: .25s;
 }
 
 .actions-user {
-        display: flex; /* Flexbox to align items in one line */
-        justify-content: space-between; 
+        display: flex; 
+        justify-content: flex-end; 
         padding-left: 20px;
         padding-right: 20px;
         align-items: center; 
@@ -138,8 +182,15 @@ body {
 
 .action-buttons {
     display: flex;
-    justify-content: flex-end;
+    justify-content: right;
     gap: 20px;
+    transform: translateY(-20px);
+    transition: .25s;
+}
+
+.action-buttons button:hover {
+    transform: scale(1.1);
+    background: #2e68c6;
 }
 
 .action-buttons button {
@@ -149,14 +200,18 @@ body {
     border: none;
 }
 
-.actions-user img {
+.action-left img {
     width: 100px;
 }
 
+.header .action-left p,
+.header .action-left span {
+    text-align: right;
+    font-size: 1,1em;
+}
+
 .action-left p {
-    text-align: end;
     font-size: 1.5em;
-    font-weight: 500;
 }
 
 
@@ -166,7 +221,7 @@ body {
     grid-area: main;
     grid-template-columns: 70% 1fr;
     grid-template-areas: "projects aside";
-    padding: 10px;
+    padding: 20px;
     gap: 20px;
 }
 
@@ -204,15 +259,22 @@ body {
     padding: 40px 20px;
     box-shadow: 0px 6px 15px -4px rgba(0,0,0,0.3);
     min-height: 150px;
+    transition: .5s;
+    cursor: pointer;
 }
 
-
+.card:hover {
+    transform: scale(1.01);
+}
 
 .card .actions {
     display: flex;
     align-self: flex-end;
     gap: 10px;
-    margin-bottom: 20px;
+}
+
+.card box-icon:hover {
+    transform: scale(1.1);
 }
 
 .card p {
@@ -228,7 +290,7 @@ body {
 }
 
 .aside .title {
-    font-size: 1.5em;
+    font-size: 2em;
     font-weight: 500;
 }
 
@@ -251,6 +313,7 @@ body {
 
 .announcement {
     border-bottom: 1px solid grey;
+    padding: 10px;
     
 }
 
@@ -277,10 +340,30 @@ body {
 .trend img {
     width: 50px;
     border-radius: 50%;
+    cursor: pointer;
+}
+
+.trend img:hover {
 }
 
 .trend {
     display: flex;
     gap: 5px;
     align-items: center;
+    transition: .2s;
+}
+
+.trend:hover {
+    transform: scale(1.05);
+}
+
+.footer {
+    grid-area: footer;
+    background: #fafafa;
+    padding: 10px;
+}
+
+.footer p {
+    text-align: center;
+    color: black;
 }
